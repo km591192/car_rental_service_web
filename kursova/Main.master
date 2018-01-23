@@ -1,0 +1,53 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Main.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    </head>
+<body>
+    <form id="form1" runat="server">
+        <%-- style="background-image: url('/content/fon.gif'); background-repeat: no-repeat; background-attachment: fixed; text-align: center; color: #000066;"--%>
+    <div class="fon" >
+        <br />
+        <asp:HyperLink ID="HyperLink1" runat="server" Font-Bold="True" Font-Names="Gigi" Font-Size="XX-Large" style="text-align: center" Font-Underline="False" ForeColor="Black" NavigateUrl="~/Main.aspx" >CRC</asp:HyperLink>
+        <br />
+        <asp:ImageButton ID="ImageButton1" runat="server" Height="200px" ImageUrl="~/content/logo.gif" Width="400px" />
+        <br />
+        
+        <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+        <table>
+            <tr>
+                <td colspan="2">
+                    <br />
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td class="map" >
+                    <asp:TreeView ID="TreeView1" runat="server" DataSourceID="SiteMapDataSource1" ForeColor="#FFCCFF" Height="65px" Width="159px">
+        </asp:TreeView>
+                </td>
+                <td class="content">
+                    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+        </table>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />   
+    </div> 
+        <div class="footer">
+<asp:Label ID="Label1" runat="server" Text="© CRC, Odessa, Ukraine, 2017. E-mail carrentcompanycrc@gmail.com" Font-Size="Medium" ForeColor="Black"></asp:Label>
+        </div>
+    </form>
+</body>
+</html>

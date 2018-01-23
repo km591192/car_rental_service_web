@@ -1,0 +1,63 @@
+﻿body {
+    background-color: white;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    background-repeat: space;
+    font-size: x-small;
+}
+
+p {
+    margin: 2%;
+    color: #ffffff;
+    font-size: x-large;
+    text-align: center;
+}
+
+
+.fon {
+    background-color: white;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: black;
+    font-family: Times New Roman;
+    font-size: x-large;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+}
+
+.map {
+    background-color: cornflowerblue;
+    opacity: 0.4;
+    width: 15%;
+    text-align: center;
+    vertical-align: top;
+}
+
+.content {
+    text-align: center;
+    background-color: lightgoldenrodyellow;
+    text-align: center;
+    color: darkgreen;
+}
+
+
+.footer {
+    background-color: white;
+    color: azure;
+    text-align: center;
+    width: 100%;
+}
+
+.circle {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+}
+
+.dc {
+    text-align: center;
+}
